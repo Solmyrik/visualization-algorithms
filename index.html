@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visualization algorithms</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="index.html" class="header__logo">Guess the number</a>
+        </div>
+      </header>
+      <section class="main">
+        <div class="main__container">
+          <div class="main__wrapper">
+            <div class="main__top">
+              <button class="main__setting">
+                <img src="./public/images/setting.svg" alt="setting" />
+              </button>
+              <label for="algorithm">Choose a sorting algorithm:</label>
+              <select name="algorithm" id="algorithmSelect">
+                <option value="bubbleSort">Bubble Sort</option>
+                <option value="selectionSort">Selection Sort</option>
+                <option value="insertionSort">Insertion Sort</option>
+                <option value="heapSort">heapSort</option>
+                <option value="countingSort">countingSort</option>
+              </select>
+              <select id="arraySelect">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">Extra Large</option>
+              </select>
+              <button class="main__start">Sort</button>
+              <button class="main__pause">
+                <img src="./public/images/restart.svg" alt="restart" />
+              </button>
+            </div>
+            <div class="main__body">
+              <div class="main__table"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
